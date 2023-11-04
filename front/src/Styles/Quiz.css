@@ -1,0 +1,91 @@
+/* Center the App container and align text to the center */
+.App {
+  font-family: 'Poppins', sans-serif;
+}
+
+.quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Set a background color */
+  }
+  
+  /* Styling for the question card */
+  .question-card {
+    width: 80%;
+    max-width: 600px; /* Limit the maximum width */
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    margin: 0 auto;
+  }
+  
+  .question-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-card li {
+    background-color: #8fbde9; /* Blue background for options */
+    color: #181616;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .question-card li:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .question-text {
+    color: #333; /* Set a text color */
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  /* Styling for the final results */
+  .results {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in the final results */
+    margin: 64px auto;
+  }
+
+  /* Styling for the final results text */
+  .results h2 {
+    color: #007bff; /* Blue color for the results heading */
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .results p {
+    font-size: 18px;
+  }
+
+  button {
+    background-color: #007bff; /* Blue button background */
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }

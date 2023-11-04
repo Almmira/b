@@ -1,0 +1,33 @@
+.Calendar {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Styling the header text */
+.header-text {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: orange;
+}
+
+/* Styling the StaticDatePicker (Calendar) component */
+/*.StaticDatePicker {}
+  /* Add any styles you want to apply to the calendar here */ 
+/* Styling the highlighted days */
+.PickersDay--highlighted {
+  background-color: orange;
+  color: black;
+}
+
+/* Styling the selected days */
+.PickersDay--selected {
+  background-color: orange;
+  color: black;
+}
+
+/* Styling the Badge component */
+.Badge {
+  color: green;
+}

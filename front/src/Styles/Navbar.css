@@ -1,0 +1,166 @@
+.navbar-section {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color:  #2e86de;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-title a {
+    color: #337ab7;
+    letter-spacing: .6px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-title {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-sign {
+    color: #0a2341;
+    font-family: 'Popins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-family: 'Rubik', sans-serif;
+}
+.navbar-items > li {
+    list-style-type: none;
+}
+.navbar-links {
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    letter-spacing: .8px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-links:hover {
+    color: #0a2341;
+}
+.navbar-btn {
+    padding: 14px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #337ab7;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.navbar-btn:hover {
+    color: #ffffff;
+    background-color: #1554ad;
+    border: 1px solid #337ab7;
+}
+/* Hamburger Icon */
+.mobile-nav {
+   display :none; 
+} 
+.hamb-icon { 
+   width :26px; 
+   height :26px; 
+   cursor :pointer; 
+} 
+.hamb-icon:hover { 
+   color :#1554ad; 
+} 
+/* Mobile Navbar */
+.mobile-navbar { 
+   display :flex; 
+   flex-direction :column; 
+   width :100%; 
+   height :100vh; 
+   position :fixed; 
+   top :0; 
+   left :-100%; 
+   background-color :white; 
+   z-index :20; 
+   justify-content :center; 
+   align-items :center; 
+   transition :left .5s ease-in-out;  
+} 
+
+.mobile-navbar-close {  
+   position:absolute;  
+   top :28px;  
+   right :28px;  
+} 
+
+.mobile-navbar-close .hamb-icon:hover {  
+   color :#1554ad;  
+} 
+
+.open-nav {  
+   left :0;  
+} 
+
+.mobile-navbar-links {  
+   list-style-type :none;  
+   display :flex;  
+   flex-direction :column;  
+   font-size :24px;  
+   gap :24px;  
+   text-align :center;  
+} 
+
+.mobile-navbar-links li a {   
+   text-decoration :none;   
+   color :rgb(255, 255, 255);   
+   font-family :'Poppins', sans-serif ;   
+   font-weight :bold ;   
+   letter-spacing :.8px ;   
+   transition :color .3s ease-in-out ;   
+} 
+
+.mobile-navbar-links li a:hover {   
+   color:#1554ad ;   
+} 
+
+/* Responsive */
+@media screen and (max-width :900px) {   
+.navbar-btn, .navbar-items {   
+display:none ;   
+}   
+
+.mobile-nav {   
+display:block ;   
+}   
+
+/* Добавленные стили для кнопок "Home" и "TextAI" */
+.navbar-items > li > .navbar-links, .mobile-navbar-links > li > .navbar-links {
+    background: none;
+    border: none;
+    padding: 0;
+    /* optional font styling */
+    font-family: inherit;
+    color: inherit;
+    text-align: inherit;
+    /* additional styles to reset button */
+    margin: 0;
+    overflow: visible;
+    width: auto;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+} 
+
+.navbar-items > li > .navbar-links:hover, .mobile-navbar-links > li > .navbar-links:hover {    
+color:#1554ad ;    
+}    
+}
+
+ 

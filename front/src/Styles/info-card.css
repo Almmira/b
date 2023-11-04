@@ -1,0 +1,86 @@
+/* Card */
+.info-card {
+    width: 370px;
+    height: 370px;
+    perspective: 1000px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+}
+
+.info-card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Content */
+.card-front p,
+.card-back p {
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: .7px;
+    line-height: 1.6rem;
+}
+
+.card-front {
+    background-color: #ECF2FF; /* Add your desired background color */
+    color: #4d4b4b; /* Text color for the front of the card */
+}
+
+.card-back {
+    background-color: #FBFCFF; /* Add your desired background color */
+    color: #4d4b4b; /* Text color for the back of the card */
+}
+
+/* Arrow Buttons */
+.arrow-buttons {
+    width: 40px; /* Increase the width to make the arrow buttons larger */
+    height: 40px; /* Increase the height to make the arrow buttons larger */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(157,37,83,0.5); /* Add a background color with some transparency */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s; /* Add a transition for the transform property */
+}
+
+.arrow-buttons:hover {
+    transform: scale(1.1); /* Add a hover effect to scale the arrow button on hover */
+}
+
+/* Card Flip Animation */
+.info-card .card-front,
+.info-card .card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.info-card .card-front {
+   transform: rotateY(0deg);
+}
+
+.info-card .card-back {
+   transform: rotateY(180deg);
+}
+
+.info-card.flipped .card-front {
+   transform: rotateY(180deg);
+}
+
+.info-card.flipped .card-back {
+   transform: rotateY(0deg);
+}
+
+/* FlashCard Title Centering */
+.ba-section {
+   display:flex;
+   flex-direction: column;
+   align-items:center;
+}

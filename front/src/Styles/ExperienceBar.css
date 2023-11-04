@@ -1,0 +1,44 @@
+/* ExperienceBar.css */
+.experience-bar-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .experience-bar {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .experience-fill {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #54de54;
+    transition: width 1s ease;
+  }
+  
+  .current-level {
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+  
+  .next-level {
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  
+  .current-level, .next-level {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
